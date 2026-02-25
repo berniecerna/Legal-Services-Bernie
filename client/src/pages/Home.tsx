@@ -1,8 +1,9 @@
 import Navbar from "@/components/layout/Navbar";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Scale, Shield, Landmark, Users, MapPin, Phone, Mail } from "lucide-react";
+import { ArrowRight, Shield, Landmark, Users, MapPin, Phone, Mail, Scale } from "lucide-react";
 import heroBg from "@/assets/hero-bg.png";
 import justiceAbstract from "@/assets/justice-abstract.png";
+import logoImage from "@assets/Logo_-_Silver_with_white_background_1772057157870.png";
 
 export default function Home() {
   return (
@@ -231,11 +232,13 @@ export default function Home() {
             </h3>
             
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-              <div className="bg-secondary/30 rounded-3xl p-12 flex items-center justify-center border border-border/50 aspect-square">
-                <div className="text-center group">
-                  <Scale className="h-24 w-24 text-primary/20 mb-4 mx-auto group-hover:scale-110 group-hover:text-primary/40 transition-all duration-500" />
-                  <p className="text-sm text-muted-foreground font-medium uppercase tracking-widest">Logo Placeholder</p>
-                </div>
+              <div className="bg-white rounded-3xl p-12 flex items-center justify-center border border-border/50 shadow-sm aspect-square relative group overflow-hidden">
+                <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <img 
+                  src={logoImage} 
+                  alt="Attorney Bernie Silver Logo" 
+                  className="w-full h-full object-contain relative z-10 transform group-hover:scale-105 transition-transform duration-700"
+                />
               </div>
               <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
                 <p>
@@ -253,8 +256,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-12 bg-white border-t border-border">
         <div className="container mx-auto px-4 md:px-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2">
-            <Scale className="h-5 w-5 text-primary" />
+          <div className="flex items-center gap-3">
+            <img src={logoImage} alt="" className="h-8 w-8 object-contain" />
             <span className="font-heading font-bold text-foreground">Attorney Bernie</span>
           </div>
           <p className="text-sm text-muted-foreground">

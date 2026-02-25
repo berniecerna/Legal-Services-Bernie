@@ -1,7 +1,8 @@
 import { Link } from "wouter";
-import { Menu, X, Scale } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/Logo_-_Silver_with_white_background_1772057157870.png";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,15 +19,19 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/">
-            <a className="flex items-center gap-2 group">
-              <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
-                <Scale className="h-6 w-6 text-primary" />
+            <a className="flex items-center gap-3 group">
+              <div className="relative h-12 w-12 overflow-hidden rounded-xl bg-white shadow-sm border border-border/50 group-hover:border-primary/30 transition-all duration-300">
+                <img 
+                  src={logoImage} 
+                  alt="Attorney Bernie Logo" 
+                  className="h-full w-full object-contain p-1.5 transform group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-xl leading-none tracking-tight text-foreground">
                   Attorney Bernie
                 </span>
-                <span className="text-xs text-muted-foreground uppercase tracking-widest font-medium">
+                <span className="text-xs text-muted-foreground uppercase tracking-widest font-medium mt-1">
                   Legal Services
                 </span>
               </div>
