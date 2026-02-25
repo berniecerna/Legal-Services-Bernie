@@ -221,6 +221,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Logo Section */}
+      <section id="logo" className="py-24 bg-white">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-sm font-bold text-primary uppercase tracking-widest mb-3 text-center">Brand Identity</h2>
+            <h3 className="text-3xl md:text-5xl font-bold mb-12 text-foreground text-center">
+              Our Logo
+            </h3>
+            
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+              <div className="bg-secondary/30 rounded-3xl p-12 flex items-center justify-center border border-border/50 aspect-square">
+                <div className="text-center group">
+                  <Scale className="h-24 w-24 text-primary/20 mb-4 mx-auto group-hover:scale-110 group-hover:text-primary/40 transition-all duration-500" />
+                  <p className="text-sm text-muted-foreground font-medium uppercase tracking-widest">Logo Placeholder</p>
+                </div>
+              </div>
+              <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
+                <p>
+                  [Type your first 6-8 sentence paragraph here about the inspiration, meaning, or design process behind the Attorney Bernie logo. You can discuss how the visual elements represent holistic defense and the commitment to the Monterey County community.]
+                </p>
+                <p>
+                  [Type your second 6-8 sentence paragraph here. This is a great place to elaborate on the "For Law. For Life. For You." tagline and how the logo serves as a visual anchor for the practice's mission to provide compassionate, detail-driven legal representation.]
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 bg-white border-t border-border">
         <div className="container mx-auto px-4 md:px-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
