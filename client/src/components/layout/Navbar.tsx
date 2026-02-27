@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/">
-            <a className="flex items-center gap-3 group">
+            <div className="flex items-center gap-3 group cursor-pointer">
               <div className="relative h-12 w-12 overflow-hidden rounded-xl bg-white shadow-sm border border-border/50 group-hover:border-primary/30 transition-all duration-300">
                 <img 
                   src={logoImage} 
@@ -35,7 +35,7 @@ export default function Navbar() {
                   Legal Services
                 </span>
               </div>
-            </a>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
