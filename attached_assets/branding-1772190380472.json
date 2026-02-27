@@ -1,0 +1,121 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Atlassian Sans",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#1868DB",
+    "accent": "#1868DB",
+    "background": "#FFFFFF",
+    "textPrimary": "#292A2E",
+    "link": "#94C748"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Atlassian Sans",
+      "heading": "Atlassian Sans"
+    },
+    "fontStacks": {
+      "heading": [
+        "Atlassian Sans",
+        "ui-sans-serif",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Ubuntu",
+        "Helvetica Neue",
+        "sans-serif"
+      ],
+      "body": [
+        "Atlassian Sans",
+        "ui-sans-serif",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Ubuntu",
+        "Helvetica Neue",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Atlassian Sans",
+        "ui-sans-serif",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Ubuntu",
+        "Helvetica Neue",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "24px",
+      "h2": "24px",
+      "body": "14px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 10,
+    "borderRadius": "0px"
+  },
+  "components": {
+    "buttonPrimary": {
+      "background": "#1868DB",
+      "textColor": "#FFFFFF",
+      "borderColor": "#DDDEDD",
+      "borderRadius": "4px",
+      "borderRadiusCorners": {
+        "topLeft": "4px",
+        "topRight": "4px",
+        "bottomRight": "4px",
+        "bottomLeft": "4px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": null,
+    "favicon": "File saved at: attached_assets/favicon.png",
+    "ogImage": null
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Log in",
+      "reasoning": "The 'Log in' button is the only button present and uses a vibrant blue color (#1868DB), which is typically used for primary CTAs."
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "There is no secondary button available with a different color from the primary button."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "legal professionals or clients seeking legal services"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": false,
+      "llmSucceeded": false,
+      "finalSource": "none"
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}
