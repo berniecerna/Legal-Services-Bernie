@@ -28,7 +28,7 @@ export default function Navbar() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-xl leading-none tracking-tight text-foreground ml-[20px] mr-[20px]">
+                <span className="font-heading font-bold tracking-tight text-foreground ml-[20px] mr-[20px] text-[45px]">
                   Attorney Bernie
                 </span>
                 <span className="text-muted-foreground uppercase tracking-widest font-medium mt-1 text-[25px] ml-[20px] mr-[20px]">
