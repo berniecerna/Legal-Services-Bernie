@@ -114,9 +114,19 @@ export default function Home() {
                 Holistic Representation
               </h3>
               <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
-                <p>
-                  My practice is rooted in the belief that a client is more than a case file. Holistic defense means understanding your story, your goals, and the circumstances that led you into your situation.
-                </p>
+                <p>My practice is rooted in holistic representation: the belief that a client is more than a case file. Holistic defense means understanding your story, your goals, and the circumstances that led you into your situation. Then, using that bigger picture to shape both strategy and outcome. By seeing the whole person, I can fight not just for a legal win, but for solutions that protect your future.
+
+                Advocacy Beyond the Courtroom
+
+                Not every fight has to play out in front of a judge. Many challenges can be resolved faster and with less stress and expense through negotiation, mediation, or having a strong advocate by your side. With a holistic lens, I look beyond the immediate conflict to resolve issues in a way that reduces risk, preserves relationships, and gives you space to move forward with confidence.
+
+                Legal Services to Win Your Case
+
+                When your case goes to court, I provide aggressive, detail‑driven representation designed to protect your rights and fight for the best possible outcome. A holistic defense means I don’t just argue the charges, I bring your full story into focus. The Court needs to know who you are beyond what is written about you in the complaining papers.  By connecting facts, context, and your long‑term goals, I build stronger arguments and fight for results that make a real difference in your life.
+
+                Complete Representation
+
+                Winning matters, but so does knowing you’re seen and heard as a whole person. From the first consultation to the final resolution, I stand beside you with strategy, persistence, and the full weight of my experience. A holistic approach means you stay informed, have a voice in the process, and know that your future, and not just your case, guides every decision we make together.</p>
               </div>
             </div>
           </div>
