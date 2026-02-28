@@ -4,8 +4,45 @@ import { ArrowRight, Shield, Landmark, Users, MapPin, Phone, Mail, Scale } from 
 import heroBg from "@/assets/hero-bg.png";
 import justiceAbstract from "@/assets/justice-abstract.png";
 import logoImage from "@assets/Logo_-_Silver_with_white_background_1772057157870.png";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { insertLeadSchema, type InsertLead } from "@shared/schema";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
+import { useToast } from "@/hooks/use-toast";
 
 export default function Home() {
+  const { toast } = useToast();
+  const form = useForm<InsertLead>({
+    resolver: zodResolver(insertLeadSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      message: ""
+    }
+  });
+
+  const mutation = useMutation({
+    mutationFn: async (data: InsertLead) => {
+      const res = await apiRequest("POST", "/api/leads", data);
+      return res.json();
+    },
+    onSuccess: () => {
+      toast({
+        title: "Message Sent",
+        description: "Bernie will get back to you as soon as possible.",
+      });
+      form.reset();
+    },
+    onError: (error: Error) => {
+      toast({
+        title: "Error",
+        description: error.message,
+        variant: "destructive"
+      });
+    }
+  });
+
   return (
     <div className="min-h-screen bg-background selection:bg-primary/20">
       <Navbar />
@@ -188,33 +225,43 @@ export default function Home() {
             </div>
             
             <div className="md:w-1/2 p-12">
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-6" onSubmit={form.handleSubmit((data) => mutation.mutate(data))}>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">Full Name</label>
                   <input 
+                    {...form.register("name")}
                     type="text" 
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                     placeholder="John Doe"
                   />
+                  {form.formState.errors.name && <p className="text-xs text-destructive">{form.formState.errors.name.message}</p>}
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">Email Address</label>
                   <input 
+                    {...form.register("email")}
                     type="email" 
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                     placeholder="john@example.com"
                   />
+                  {form.formState.errors.email && <p className="text-xs text-destructive">{form.formState.errors.email.message}</p>}
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">How can we help?</label>
                   <textarea 
+                    {...form.register("message")}
                     rows={4}
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none"
                     placeholder="Briefly describe your situation..."
                   />
+                  {form.formState.errors.message && <p className="text-xs text-destructive">{form.formState.errors.message.message}</p>}
                 </div>
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white rounded-lg h-12 text-base font-medium">
-                  Send Message
+                <Button 
+                  type="submit"
+                  disabled={mutation.isPending}
+                  className="w-full bg-primary hover:bg-primary/90 text-white rounded-lg h-12 text-base font-medium"
+                >
+                  {mutation.isPending ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </div>
