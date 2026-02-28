@@ -31,7 +31,7 @@ export default function Navbar() {
                 <span className="font-heading font-bold text-xl leading-none tracking-tight text-foreground">
                   Attorney Bernie
                 </span>
-                <span className="text-muted-foreground uppercase tracking-widest font-medium mt-1 text-[25px]">
+                <span className="text-muted-foreground uppercase tracking-widest font-medium mt-1 text-[25px] ml-[20px] mr-[20px]">
                   Legal Services
                 </span>
               </div>
