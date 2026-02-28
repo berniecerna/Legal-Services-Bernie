@@ -73,7 +73,7 @@ export default function Home() {
                 <span className="text-primary">For Life.</span> <br />
                 For You.
               </h1>
-              <div className="relative h-48 w-48 md:h-72 md:w-72 shrink-0 overflow-hidden rounded-3xl bg-white shadow-xl border border-border/50 animate-in fade-in slide-in-from-right-8 duration-1000 ml-[50px] mr-[50px]">
+              <div className="relative h-48 w-48 md:h-72 md:w-72 shrink-0 overflow-hidden rounded-3xl bg-white shadow-xl border border-border/50 animate-in fade-in slide-in-from-right-8 duration-1000 ml-[-20px] mr-[-20px]">
                 <img 
                   src={logoImage} 
                   alt="Attorney Bernie Logo" 
