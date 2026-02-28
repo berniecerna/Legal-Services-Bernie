@@ -84,7 +84,7 @@ export default function Home() {
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed font-light">
               Guiding you through challenges, in and out of the courtroom.
-              <span className="block my-4 text-primary/30">|</span>
+              <span className="block my-0 text-primary/30">|</span>
               Proudly serving the Monterey County community, San Benito & Santa Cruz Counties.
             </p>
             
