@@ -46,7 +46,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background selection:bg-primary/20">
       <Navbar />
-
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -74,7 +73,7 @@ export default function Home() {
                 <span className="text-primary">For Life.</span> <br />
                 For You.
               </h1>
-              <div className="relative h-32 w-32 md:h-48 md:w-48 shrink-0 overflow-hidden rounded-3xl bg-white shadow-xl border border-border/50 animate-in fade-in slide-in-from-right-8 duration-1000">
+              <div className="relative h-32 w-32 md:h-48 md:w-48 shrink-0 overflow-hidden rounded-3xl bg-white shadow-xl border border-border/50 animate-in fade-in slide-in-from-right-8 duration-1000 ml-[100px] mr-[100px]">
                 <img 
                   src={logoImage} 
                   alt="Attorney Bernie Logo" 
@@ -99,7 +98,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Holistic Approach Section */}
       <section id="about" className="py-24 bg-white relative">
         <div className="container mx-auto px-4 md:px-8">
@@ -129,7 +127,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Services Section */}
       <section id="services" className="py-24 bg-secondary/30">
         <div className="container mx-auto px-4 md:px-8">
@@ -162,7 +159,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Practice Areas Strip */}
       <section className="py-16 bg-foreground text-background">
         <div className="container mx-auto px-4 md:px-8">
@@ -180,7 +176,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Quote Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-8 max-w-4xl text-center">
@@ -191,7 +186,6 @@ export default function Home() {
           <cite className="text-lg text-muted-foreground font-medium">— George Bernard Shaw</cite>
         </div>
       </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-24 bg-secondary">
         <div className="container mx-auto px-4 md:px-8">
@@ -277,7 +271,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Logo Section */}
       <section id="logo" className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-8">
@@ -308,7 +301,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="py-12 bg-white border-t border-border">
         <div className="container mx-auto px-4 md:px-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
