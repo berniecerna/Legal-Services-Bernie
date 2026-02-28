@@ -153,7 +153,7 @@ export default function Home() {
             />
             <ServiceCard 
               icon={<Landmark className="h-8 w-8" />}
-              title="Litigation & Trial"
+              title="Strategy & Litigation"
               description="Aggressive, detail-driven representation designed to protect your rights and fight for the best possible outcome when you go to court."
             />
             <ServiceCard 
@@ -170,13 +170,13 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <h3 className="text-2xl font-bold font-heading whitespace-nowrap">Practice Areas</h3>
             <div className="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-4 text-background/70 font-medium">
-              <span>Criminal Defense</span>
-              <span className="hidden sm:inline">•</span>
-              <span>Family Law</span>
-              <span className="hidden sm:inline">•</span>
-              <span>Civil Litigation</span>
-              <span className="hidden sm:inline">•</span>
-              <span>Estate Planning</span>
+              <span>Criminal Defense & Record Expungement</span>
+              <span className="hidden sm:inline">|</span>
+              <span className="text-[20px]">Civil Litigation</span>
+              <span className="hidden sm:inline">|</span>
+              <span>Contracts</span>
+              <span className="hidden sm:inline">|</span>
+              <span>Limited Family Law</span>
             </div>
           </div>
         </div>
@@ -198,7 +198,7 @@ export default function Home() {
             <div className="md:w-1/2 p-12 bg-primary text-primary-foreground flex flex-col justify-center">
               <h3 className="text-3xl font-bold mb-6 font-heading">Ready to protect your future?</h3>
               <p className="text-primary-foreground/80 mb-10 leading-relaxed font-light">
-                Schedule a free consultation today. Let's discuss your situation and build a strategy tailored to your life.
+                Schedule a free consultation today. Let's discuss your situation and build a strategy tailored to you.
               </p>
               
               <div className="space-y-6">
@@ -216,7 +216,7 @@ export default function Home() {
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="font-medium">(555) 123-4567</p>
+                    <p className="font-medium">(831) 609-0022</p>
                     <p className="text-sm text-primary-foreground/70">Available 24/7</p>
                   </div>
                 </div>
@@ -225,7 +225,7 @@ export default function Home() {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="font-medium">contact@yourattorneybernie.com</p>
+                    <p className="font-medium">email@yourattorneybernie.com</p>
                     <p className="text-sm text-primary-foreground/70">Confidential & Secure</p>
                   </div>
                 </div>
