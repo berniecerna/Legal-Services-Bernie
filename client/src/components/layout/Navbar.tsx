@@ -31,7 +31,7 @@ export default function Navbar() {
                 <span className="font-heading font-bold text-xl leading-none tracking-tight text-foreground">
                   Attorney Bernie
                 </span>
-                <span className="text-xs text-muted-foreground uppercase tracking-widest font-medium mt-1">
+                <span className="text-muted-foreground uppercase tracking-widest font-medium mt-1 text-[25px]">
                   Legal Services
                 </span>
               </div>
@@ -63,7 +63,6 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-
       {/* Mobile Nav */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-b border-border absolute w-full pb-4 shadow-xl animate-in slide-in-from-top-2">
