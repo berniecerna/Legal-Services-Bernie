@@ -170,7 +170,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <h3 className="text-2xl font-bold font-heading whitespace-nowrap">Practice Areas</h3>
             <div className="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-4 text-background/70 font-medium">
-              <span>Criminal Defense & Record Expungement</span>
+              <span className="text-[20px]">Criminal Defense & Record Expungement</span>
               <span className="hidden sm:inline">|</span>
               <span className="text-[20px]">Civil Litigation</span>
               <span className="hidden sm:inline">|</span>
