@@ -117,9 +117,6 @@ export default function Home() {
                 <p>
                   My practice is rooted in the belief that a client is more than a case file. Holistic defense means understanding your story, your goals, and the circumstances that led you into your situation.
                 </p>
-                <p>
-                  By seeing the whole person, I can fight not just for a legal win, but for solutions that protect your future. Then, using that bigger picture to shape both strategy and outcome.
-                </p>
               </div>
             </div>
           </div>
