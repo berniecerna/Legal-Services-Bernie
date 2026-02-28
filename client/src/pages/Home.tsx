@@ -68,11 +68,20 @@ export default function Home() {
               Accepting New Clients
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground mb-6 leading-[1.1] tracking-tight">
-              For Law. <br />
-              <span className="text-primary">For Life.</span> <br />
-              For You.
-            </h1>
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-8 mb-6">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[1.1] tracking-tight">
+                For Law. <br />
+                <span className="text-primary">For Life.</span> <br />
+                For You.
+              </h1>
+              <div className="relative h-32 w-32 md:h-48 md:w-48 shrink-0 overflow-hidden rounded-3xl bg-white shadow-xl border border-border/50 animate-in fade-in slide-in-from-right-8 duration-1000">
+                <img 
+                  src={logoImage} 
+                  alt="Attorney Bernie Logo" 
+                  className="h-full w-full object-contain p-4"
+                />
+              </div>
+            </div>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed font-light">
               Guiding you through challenges, in and out of the courtroom. Proudly serving the Monterey County community, San Benito & Santa Cruz Counties.
