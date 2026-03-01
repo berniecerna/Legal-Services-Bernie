@@ -1,29 +1,25 @@
 import { type Lead, type InsertLead, leads } from "@shared/schema";
+import { drizzle } from "drizzle-orm/postgres-js";
+import postgres from "postgres";
+import { desc } from "drizzle-orm";
 
 export interface IStorage {
   createLead(lead: InsertLead): Promise<Lead>;
+  getLeads(): Promise<Lead[]>;
 }
 
-export class MemStorage implements IStorage {
-  private leads: Map<number, Lead>;
-  private currentId: number;
+const client = postgres(process.env.DATABASE_URL!);
+const db = drizzle(client);
 
-  constructor() {
-    this.leads = new Map();
-    this.currentId = 1;
-  }
-
+export class DatabaseStorage implements IStorage {
   async createLead(insertLead: InsertLead): Promise<Lead> {
-    const id = this.currentId++;
-    const lead: Lead = { 
-      ...insertLead, 
-      id, 
-      status: "new", 
-      createdAt: new Date() 
-    };
-    this.leads.set(id, lead);
+    const [lead] = await db.insert(leads).values(insertLead).returning();
     return lead;
   }
+
+  async getLeads(): Promise<Lead[]> {
+    return await db.select().from(leads).orderBy(desc(leads.createdAt));
+  }
 }
 
-export const storage = new MemStorage();
+export const storage = new DatabaseStorage();
