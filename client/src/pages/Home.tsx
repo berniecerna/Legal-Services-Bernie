@@ -219,7 +219,7 @@ export default function Home() {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="font-medium">email@yourattorneybernie.com</p>
+                    <p className="font-medium">email@YourAttorneyBernie.com</p>
                     <p className="text-sm text-primary-foreground/70">Confidential & Secure</p>
                   </div>
                 </div>
