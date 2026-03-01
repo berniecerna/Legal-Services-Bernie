@@ -10,9 +10,19 @@ import { insertLeadSchema, type InsertLead } from "@shared/schema";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const { toast } = useToast();
+  const [showConfirmation, setShowConfirmation] = useState(false);
+
+  useEffect(() => {
+    if (showConfirmation) {
+      const timer = setTimeout(() => setShowConfirmation(false), 6000);
+      return () => clearTimeout(timer);
+    }
+  }, [showConfirmation]);
+
   const form = useForm<InsertLead>({
     resolver: zodResolver(insertLeadSchema),
     defaultValues: {
@@ -28,11 +38,8 @@ export default function Home() {
       return res.json();
     },
     onSuccess: () => {
-      toast({
-        title: "Message Sent",
-        description: "Bernie will get back to you as soon as possible.",
-      });
       form.reset();
+      setShowConfirmation(true);
     },
     onError: (error: Error) => {
       toast({
@@ -280,6 +287,11 @@ export default function Home() {
                 >
                   {mutation.isPending ? "Sending..." : "Send Message"}
                 </Button>
+                {showConfirmation && (
+                  <div data-testid="text-confirmation" className="bg-green-50 border border-green-200 text-green-800 rounded-lg p-4 text-center text-sm font-medium animate-in fade-in duration-300">
+                    Your message has been submitted. We will contact you shortly.
+                  </div>
+                )}
               </form>
             </div>
           </div>
