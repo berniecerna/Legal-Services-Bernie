@@ -303,9 +303,9 @@ export default function Home() {
                 />
               </div>
               <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
-                <p>
-                  [Type your first 6-8 sentence paragraph here about the inspiration, meaning, or design process behind the Attorney Bernie logo. You can discuss how the visual elements represent holistic defense and the commitment to the Monterey County community.]
-                </p>
+                <p>The silver logo is a visual representation of the two most vital elements of a successful legal team: unwavering protection and measurable progress. At its heart is the bear, a timeless symbol of steady power and calm authority. In the legal arena, this imagery signals a practice built on controlled strength rather than reckless force. It reflects an attorney who stands firmly between a client and potential harm, remaining grounded and unshaken under the most intense pressure. This choice of imagery also creates a memorable, personal connection to the name Bernie, serving as a distinct visual shorthand for an advocate who possesses the formidable presence necessary to protect your interests when it matters most.
+
+                Complementing this strength are the upward-moving arrows, which cut through the design to represent momentum and the pursuit of better outcomes. This signifies that the work performed goes far beyond simply managing a case; it is about actively moving a client’s situation from uncertainty toward clarity and from risk toward control. By integrating the rising arrow within the silhouette of the bear, the logo captures a unique brand promise: you are protected by strength while being guided by strategy toward a superior position. This dual symbolism perfectly mirrors the goals of the practice: shielding you from exposure and consequences while simultaneously advancing your position to ensure stability and a successful resolution for the future.</p>
               </div>
             </div>
           </div>
