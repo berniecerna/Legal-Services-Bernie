@@ -114,8 +114,7 @@ export default function Home() {
                 Holistic Representation
               </h3>
               <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
-                <p>My practice is rooted in holistic representation: the belief that a client is more than a case file. Holistic defense means understanding your story, your goals, and the circumstances that led you into your situation. Then, using that bigger picture to shape both strategy and outcome. By seeing the whole person, I can fight not just for a legal win, but for solutions that protect your future.</p></p>
-                <p>
+                <p>My practice is rooted in holistic representation: the belief that a client is more than a case file. Holistic defense means understanding your story, your goals, and the circumstances that led you into your situation. Then, using that bigger picture to shape both strategy and outcome. By seeing the whole person, I can fight not just for a legal win, but for solutions that protect your future.</p>
 
                 <p className="font-bold text-foreground">Solution Based Advocacy</p>
 
