@@ -45,7 +45,7 @@ export default function Navbar() {
           <Link href="/">
             <div className="flex items-center gap-3 group cursor-pointer">
               <div className="flex flex-col ml-[-20px] mr-[-20px]">
-                <span className="font-heading font-bold tracking-tight text-foreground ml-[20px] mr-[20px] text-[45px]">
+                <span className="font-heading font-bold tracking-tight text-foreground ml-[20px] mr-[20px] text-[45px] pt-[-10px] pb-[-10px]">
                   Attorney Bernie
                 </span>
                 <span className="text-muted-foreground uppercase tracking-widest font-medium ml-[20px] mr-[20px] text-[25px] mt-[0px] mb-[0px] pt-[10px] pb-[10px]">
