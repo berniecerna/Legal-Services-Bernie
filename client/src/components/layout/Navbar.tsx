@@ -81,6 +81,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                  onClick={() => window.scrollTo({ top: 0 })}
                 >
                   {link.name}
                 </Link>
@@ -128,7 +129,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   className="py-4 border-b border-border/50 text-foreground/80 hover:text-primary transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0 }); }}
                 >
                   {link.name}
                 </Link>
