@@ -141,6 +141,10 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <ServiceCard 
+              icon={<Users className="h-8 w-8" />}
+              title="Client-Centered Focus"
+              description="You stay informed, have a voice in the process, and know that your future, and not just your case, guides every decision."
+            <ServiceCard 
               icon={<Shield className="h-8 w-8" />}
               title="Advocacy Beyond Court"
               description="Not every fight has to play out in front of a judge. Many challenges can be resolved faster through negotiation or mediation."
@@ -149,11 +153,6 @@ export default function Home() {
               icon={<Landmark className="h-8 w-8" />}
               title="Strategy & Litigation"
               description="Aggressive, detail-driven representation designed to protect your rights and fight for the best possible outcome when you go to court."
-            />
-            <ServiceCard 
-              icon={<Users className="h-8 w-8" />}
-              title="Client-Centered Focus"
-              description="You stay informed, have a voice in the process, and know that your future, and not just your case, guides every decision."
             />
           </div>
         </div>
