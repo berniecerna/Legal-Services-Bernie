@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Meet Bernie", href: "#about" },
+    { name: "Meet Bernie", href: "/meet-bernie" },
     { name: "Services", href: "#services" },
     { name: "About Our Logo", href: "#logo" },
     { name: "Contact", href: "#contact" },
@@ -34,15 +34,25 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.href.startsWith("#") ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                >
+                  {link.name}
+                </Link>
+              )
+            )}
             <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 font-medium tracking-wide">
               Free Consultation
             </Button>
@@ -61,16 +71,27 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-b border-border absolute w-full pb-4 shadow-xl animate-in slide-in-from-top-2">
           <nav className="flex flex-col container mx-auto px-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="py-4 border-b border-border/50 text-foreground/80 hover:text-primary transition-colors font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.href.startsWith("#") ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="py-4 border-b border-border/50 text-foreground/80 hover:text-primary transition-colors font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="py-4 border-b border-border/50 text-foreground/80 hover:text-primary transition-colors font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              )
+            )}
             <Button className="mt-6 bg-primary w-full rounded-full">
               Free Consultation
             </Button>
