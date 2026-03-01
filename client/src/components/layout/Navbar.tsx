@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <Link href="/">
             <div className="flex items-center gap-3 group cursor-pointer">
-              <div className="flex flex-col">
+              <div className="flex flex-col ml-[-20px] mr-[-20px]">
                 <span className="font-heading font-bold tracking-tight text-foreground ml-[20px] mr-[20px] text-[45px]">
                   Attorney Bernie
                 </span>
