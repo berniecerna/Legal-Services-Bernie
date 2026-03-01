@@ -162,7 +162,7 @@ export default function Home() {
       <section className="py-16 bg-foreground text-background">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <h3 className="text-2xl font-bold font-heading whitespace-nowrap">Practice Areas</h3>
+            <h3 className="font-bold font-heading whitespace-nowrap text-[26px]">Practice Areas</h3>
             <div className="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-4 font-medium text-[#FFFFFF]">
               <span className="text-[20px]">Criminal Defense & Record Expungement</span>
               <span className="hidden sm:inline">|</span>
