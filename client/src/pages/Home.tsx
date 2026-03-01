@@ -269,6 +269,9 @@ export default function Home() {
                   />
                   {form.formState.errors.message && <p className="text-xs text-destructive">{form.formState.errors.message.message}</p>}
                 </div>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Submitting this form does not create an attorney-client relationship. However, all information you provide will be kept strictly confidential in accordance with California Business and Professions Code § 6068(e) and California Rules of Professional Conduct, Rule 1.18.
+                </p>
                 <Button 
                   type="submit"
                   disabled={mutation.isPending}
