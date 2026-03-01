@@ -20,13 +20,6 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <Link href="/">
             <div className="flex items-center gap-3 group cursor-pointer">
-              <div className="relative h-12 w-12 overflow-hidden rounded-xl bg-white shadow-sm border border-border/50 group-hover:border-primary/30 transition-all duration-300">
-                <img 
-                  src={logoImage} 
-                  alt="Attorney Bernie Logo" 
-                  className="h-full w-full object-contain p-1.5 transform group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
               <div className="flex flex-col">
                 <span className="font-heading font-bold tracking-tight text-foreground ml-[20px] mr-[20px] text-[45px]">
                   Attorney Bernie
