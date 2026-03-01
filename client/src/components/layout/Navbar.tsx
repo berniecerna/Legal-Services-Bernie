@@ -11,6 +11,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Meet Bernie", href: "#about" },
     { name: "Services", href: "#services" },
+    { name: "About Our Logo", href: "#logo" },
     { name: "Contact", href: "#contact" },
   ];
 
