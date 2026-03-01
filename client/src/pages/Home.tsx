@@ -306,9 +306,6 @@ export default function Home() {
                 <p>
                   [Type your first 6-8 sentence paragraph here about the inspiration, meaning, or design process behind the Attorney Bernie logo. You can discuss how the visual elements represent holistic defense and the commitment to the Monterey County community.]
                 </p>
-                <p>
-                  [Type your second 6-8 sentence paragraph here. This is a great place to elaborate on the "For Law. For Life. For You." tagline and how the logo serves as a visual anchor for the practice's mission to provide compassionate, detail-driven legal representation.]
-                </p>
               </div>
             </div>
           </div>
