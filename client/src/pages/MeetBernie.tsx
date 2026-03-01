@@ -49,11 +49,6 @@ export default function MeetBernie() {
                 <h4 className="text-xl font-bold text-foreground mb-4">Community Involvement</h4>
                 <p>[Write about your ties to the Monterey County community. Include any volunteer work, community organizations, pro bono efforts, or local involvement that reflects your commitment beyond the courtroom.]</p>
               </div>
-
-              <div>
-                <h4 className="text-xl font-bold text-foreground mb-4">Outside the Courtroom</h4>
-                <p>[Write about your personal interests and hobbies. This helps clients connect with you as a person. Include family life, hobbies, or passions that give visitors a sense of who you are beyond your legal practice.]</p>
-              </div>
             </div>
           </div>
         </div>
