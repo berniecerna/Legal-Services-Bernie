@@ -18,7 +18,7 @@ export default function MeetBernie() {
                 <p className="text-muted-foreground text-center">[Insert photo of Bernie here]</p>
               </div>
               <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
-                <p>[Write a brief introduction about Bernie here. Include background, where you grew up, and what drew you to the legal profession. This is the first thing visitors will read, so make it personal and welcoming.]</p>
+                <p>I became a lawyer because I like making complicated things simple. Growing up, I translated English to Spanish for my mom, and that’s when I realized people need help navigating systems that weren’t built for them. I liked helping then, and I like helping now. Today, I translate the legal system for clients facing some of the most stressful moments of their lives. My goal is always the same: to give people clarity and the confidence to make informed decisions. </p>
                 <p>[Write about your education, bar admissions, and professional qualifications here. Include law school, any honors or distinctions, and years of experience practicing law.]</p>
               </div>
             </div>
