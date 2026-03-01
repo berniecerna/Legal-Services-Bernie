@@ -14,6 +14,22 @@ export default function Navbar() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const handleHashClick = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+    const hash = href.replace("/", "");
+    const currentPath = window.location.pathname;
+    if (currentPath !== "/") {
+      setLocation("/");
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      const el = document.querySelector(hash);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Meet Bernie", href: "/meet-bernie" },
@@ -55,6 +71,7 @@ export default function Navbar() {
                 <a
                   key={link.name}
                   href={link.href}
+                  onClick={(e) => handleHashClick(e, link.href)}
                   className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
                 >
                   {link.name}
@@ -102,7 +119,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   className="py-4 border-b border-border/50 text-foreground/80 hover:text-primary transition-colors font-medium"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => { handleHashClick(e, link.href); setIsMenuOpen(false); }}
                 >
                   {link.name}
                 </a>
