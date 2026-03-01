@@ -26,7 +26,7 @@ export default function MeetBernie() {
             <div className="space-y-8 text-lg text-muted-foreground font-light leading-relaxed">
               <div>
                 <h4 className="text-xl font-bold text-foreground mb-4">Why I Practice Law</h4>
-                <p>I believe in holistic representation. Legal problems don’t happen in isolation. They affect families, futures, and peace of mind. That’s why I don’t just focus on the immediate case; I focus on what resolution will truly move your life forward. Sometimes that means trial. Sometimes it means negotiation. Either way, it means advocacy tailored to the person, not just the paperwork.</p>
+                <p className="pt-[15px] pb-[15px]">I believe in holistic representation. Legal problems don’t happen in isolation. They affect families, futures, and peace of mind. That’s why I don’t just focus on the immediate case; I focus on what resolution will truly move your life forward. Sometimes that means trial. Sometimes it means negotiation. Either way, it means advocacy tailored to the person, not just the paperwork.</p>
 
                 <p className="pl-[0px] pr-[0px] pt-[20px] pb-[20px]">As one of the few Latino and Spanish-speaking attorneys in this community, my role is essential. All people, including my Spanish-speaking and immigrant clients, deserve to feel secure in their choice of lawyer. To know that the person representing them truly has their back. That’s the standard I hold myself to, every single time.</p>
 
