@@ -48,7 +48,7 @@ export default function Navbar() {
                 <span className="font-heading font-bold tracking-tight text-foreground ml-[20px] mr-[20px] text-[45px] pt-[-10px] pb-[-10px]">
                   Attorney Bernie
                 </span>
-                <span className="text-muted-foreground uppercase tracking-widest font-medium ml-[20px] mr-[20px] text-[25px] mt-[0px] mb-[0px] pt-[10px] pb-[10px]">
+                <span className="text-muted-foreground uppercase tracking-widest font-medium ml-[20px] mr-[20px] text-[25px] mt-[0px] mb-[0px] pt-[0px] pb-[0px]">
                   Legal Services
                 </span>
               </div>
