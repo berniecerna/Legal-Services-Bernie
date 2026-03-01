@@ -312,9 +312,9 @@ export default function Home() {
         </div>
       </section>
       {/* Footer */}
-      <footer className="py-12 bg-white border-t border-border">
+      <footer className="py-6 bg-white border-t border-border">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+          <div className="text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
             <div>
               <div className="flex items-center gap-3">
                 <img src={logoImage} alt="" className="h-8 w-8 object-contain" />
@@ -335,7 +335,7 @@ export default function Home() {
               <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
             </div>
           </div>
-          <div className="border-t border-border pt-6">
+          <div className="border-t border-border pt-4">
             <p className="text-xs text-muted-foreground text-center leading-relaxed max-w-4xl mx-auto">
               The information on this website is provided for general informational purposes only and is not legal advice. Sending a message through this site, filling out a contact form, or communicating with Attorney Bernie in any way does not create an attorney-client relationship. No attorney-client relationship is formed unless and until a written agreement is signed. Please do not send confidential or sensitive information through this site.
             </p>
