@@ -30,7 +30,7 @@ export default function MeetBernie() {
 
                 <p className="pl-[0px] pr-[0px] pt-[20px] pb-[20px]">As one of the few Latino and Spanish-speaking attorneys in this community, my role is essential. All people, including my Spanish-speaking and immigrant clients, deserve to feel secure in their choice of lawyer. To know that the person representing them truly has their back. That’s the standard I hold myself to, every single time.</p>
 
-                <p>Clients describe me as informed, caring, and patient. What excites me most about law isn’t handing down directives but walking my clients through every step, explaining my thought process, sharing the strategy, and incorporating their goals into the plan. That way, the final result always feels like a success that reflects their voice as much as mine.</p>
+                <p className="pt-[20px] pb-[20px]">Clients describe me as informed, caring, and patient. What excites me most about law isn’t handing down directives but walking my clients through every step, explaining my thought process, sharing the strategy, and incorporating their goals into the plan. That way, the final result always feels like a success that reflects their voice as much as mine.</p>
 
                 <p>I was raised in Salinas and built my career here in Monterey County, with cases extending into Santa Cruz, San Benito, and Santa Clara counties. These are my communities, and I draw on the relationships I’ve built across them to advocate more effectively for my clients.</p>
 
