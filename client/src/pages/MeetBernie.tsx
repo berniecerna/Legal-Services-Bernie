@@ -26,23 +26,17 @@ export default function MeetBernie() {
             <div className="space-y-8 text-lg text-muted-foreground font-light leading-relaxed">
               <div>
                 <h4 className="text-xl font-bold text-foreground mb-4">Why I Practice Law</h4>
-                <p>I became a lawyer because I like making complicated things simple. Growing up, I translated English to Spanish for my mom, and that’s when I realized people need help navigating systems that weren’t built for them. I liked helping then, and I like helping now. Today, I translate the legal system for clients facing some of the most stressful moments of their lives. My goal is always the same: to give people clarity and the confidence to make informed decisions.
+                <p>I believe in holistic representation. Legal problems don’t happen in isolation. They affect families, futures, and peace of mind. That’s why I don’t just focus on the immediate case; I focus on what resolution will truly move your life forward. Sometimes that means trial. Sometimes it means negotiation. Either way, it means advocacy tailored to the person, not just the paperwork.</p>
 
-                I believe in holistic representation. Legal problems don’t happen in isolation. They affect families, futures, and peace of mind. That’s why I don’t just focus on the immediate case; I focus on what resolution will truly move your life forward. Sometimes that means trial. Sometimes it means negotiation. Either way, it means advocacy tailored to the person, not just the paperwork.
+                <p>As one of the few Latino and Spanish-speaking attorneys in this community, my role is essential. All people, including my Spanish-speaking and immigrant clients, deserve to feel secure in their choice of lawyer. To know that the person representing them truly has their back. That’s the standard I hold myself to, every single time.</p>
 
-                I balanced a full-time job while attending law school at night, graduating and passing the bar on the same timeline as traditional students. During that time, I worked for two of the top criminal defense attorneys in California, who instilled in me the practical courtroom strategies, client-first discipline, and relentless preparation that drive my practice today. Because of them, I have the foundation to continue fighting for my clients, in my own way.
+                <p>Clients describe me as informed, caring, and patient. What excites me most about law isn’t handing down directives but walking my clients through every step, explaining my thought process, sharing the strategy, and incorporating their goals into the plan. That way, the final result always feels like a success that reflects their voice as much as mine.</p>
 
-                Since becoming licensed in 2022, I’ve focused on criminal defense and related civil matters. I trained in mediation as well, because sometimes the smartest win is the one you negotiate. In the courtroom, my strength lies in being personable and professional with judges, clerks, and opposing counsel. I use that rapport to open the door for fair outcomes. But if those doors close, I don’t hesitate to push back with everything I have to protect my clients.
+                <p>I was raised in Salinas and built my career here in Monterey County, with cases extending into Santa Cruz, San Benito, and Santa Clara counties. These are my communities, and I draw on the relationships I’ve built across them to advocate more effectively for my clients.</p>
 
-                As one of the few Latino and Spanish-speaking attorneys in this community, my role is essential. All people, including my Spanish-speaking and immigrant clients, deserve to feel secure in their choice of lawyer. To know that the person representing them truly has their back. That’s the standard I hold myself to, every single time.
+                <p>Outside of work, I’m a lifelong learner and problem-solver. I’m currently on my second custom PC build and love keeping up with the latest tech. I also regularly am baking and enjoy formulating new recipes and flavor combinations. In another life, I would’ve gone to pastry school instead of law school.</p>
 
-                Clients describe me as informed, caring, and patient. What excites me most about law isn’t handing down directives but walking my clients through every step, explaining my thought process, sharing the strategy, and incorporating their goals into the plan. That way, the final result always feels like a success that reflects their voice as much as mine.
-
-                I was raised in Salinas and built my career here in Monterey County, with cases extending into Santa Cruz, San Benito, and Santa Clara counties. These are my communities, and I draw on the relationships I’ve built across them to advocate more effectively for my clients.
-
-                Outside of work, I’m a lifelong learner and problem-solver. I’m currently on my second custom PC build and love keeping up with the latest tech. I enjoy baking (in another life, I would’ve gone to pastry school instead of law school), and I love intimate hangouts with close friends. Whether it’s law, tech, or creating fine pastries, my approach is the same: learn it, simplify it, execute it.
-
-                Contact me today, and let’s chart a clear path forward — together.</p>
+                <p>Contact me today, and let’s chart a clear path forward — together.</p>
               </div>
             </div>
           </div>
