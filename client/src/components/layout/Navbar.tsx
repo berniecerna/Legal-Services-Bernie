@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -6,6 +6,13 @@ import logoImage from "@assets/Logo_-_Silver_with_white_background_1772057157870
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [, setLocation] = useLocation();
+
+  const handleHomeClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setLocation("/");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -35,7 +42,16 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) =>
-              link.href.startsWith("/#") ? (
+              link.href === "/" ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={handleHomeClick}
+                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                >
+                  {link.name}
+                </a>
+              ) : link.href.startsWith("/#") ? (
                 <a
                   key={link.name}
                   href={link.href}
@@ -72,7 +88,16 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-b border-border absolute w-full pb-4 shadow-xl animate-in slide-in-from-top-2">
           <nav className="flex flex-col container mx-auto px-4">
             {navLinks.map((link) =>
-              link.href.startsWith("/#") ? (
+              link.href === "/" ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={(e) => { handleHomeClick(e); setIsMenuOpen(false); }}
+                  className="py-4 border-b border-border/50 text-foreground/80 hover:text-primary transition-colors font-medium"
+                >
+                  {link.name}
+                </a>
+              ) : link.href.startsWith("/#") ? (
                 <a
                   key={link.name}
                   href={link.href}
