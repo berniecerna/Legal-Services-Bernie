@@ -201,8 +201,7 @@ export default function Home() {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="font-medium">21 W. Alisal Street #110
-                    Salinas, CA 93901</p>
+                    <p className="font-medium">21 W. Alisal Street #110, Salinas, CA 93901</p>
                     <p className="text-sm text-primary-foreground/70">Serving Monterey, San Benito, Santa Cruz, & Santa Clara Counties.</p>
                   </div>
                 </div>
