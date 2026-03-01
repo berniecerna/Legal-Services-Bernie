@@ -82,7 +82,7 @@ export default function Home() {
               </div>
             </div>
             
-            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed font-light">Guiding you through challenges, in and out of the courtroom. Proudly serving the Monterey County community, San Benito, Santa Cruz, and Santa Clara counties.</p>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed font-light">Guiding you through challenges, in and out of the courtroom. Located in Monterey County and serving the surrounding San Benito, Santa Cruz, and Santa Clara areas.</p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 h-14 text-base shadow-lg shadow-primary/25">
