@@ -170,7 +170,7 @@ export default function Home() {
               <span className="hidden sm:inline">|</span>
               <span className="text-[20px]">Contracts</span>
               <span className="hidden sm:inline">|</span>
-              <span className="text-[20px]">Limited Family Law</span>
+              <span className="text-[20px]">Family Law (Limited Scope)</span>
             </div>
           </div>
         </div>
