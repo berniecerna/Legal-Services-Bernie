@@ -36,7 +36,7 @@ export default function MeetBernie() {
 
                 <p className="pt-[20px] pb-[20px]">Outside of work, I’m a lifelong learner and problem-solver. I’m currently on my second custom PC build and love keeping up with the latest tech. I also regularly am baking and enjoy formulating new recipes and flavor combinations. In another life, I would’ve gone to pastry school instead of law school.</p>
 
-                <p>Contact me today, and let’s chart a clear path forward — together.</p>
+                <p className="pt-[15px] pb-[15px]">Contact me today, and let’s chart a clear path forward — together.</p>
               </div>
             </div>
           </div>
