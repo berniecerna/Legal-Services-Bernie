@@ -316,17 +316,24 @@ export default function Home() {
       </section>
       {/* Footer */}
       <footer className="py-12 bg-white border-t border-border">
-        <div className="container mx-auto px-4 md:px-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-3">
-            <img src={logoImage} alt="" className="h-8 w-8 object-contain" />
-            <span className="font-heading font-bold text-foreground">Attorney Bernie</span>
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+            <div className="flex items-center gap-3">
+              <img src={logoImage} alt="" className="h-8 w-8 object-contain" />
+              <span className="font-heading font-bold text-foreground">Attorney Bernie</span>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Attorney Bernie Legal Services. All rights reserved.
+            </p>
+            <div className="flex gap-4 text-sm text-muted-foreground">
+              <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+            </div>
           </div>
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Attorney Bernie Legal Services. All rights reserved.
-          </p>
-          <div className="flex gap-4 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+          <div className="border-t border-border pt-6">
+            <p className="text-xs text-muted-foreground text-center leading-relaxed max-w-4xl mx-auto">
+              The information on this website is provided for general informational purposes only and is not legal advice. Sending a message through this site, filling out a contact form, or communicating with Attorney Bernie in any way does not create an attorney-client relationship. No attorney-client relationship is formed unless and until a written agreement is signed. Please do not send confidential or sensitive information through this site.
+            </p>
           </div>
         </div>
       </footer>
