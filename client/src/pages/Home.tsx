@@ -249,6 +249,17 @@ export default function Home() {
                   {form.formState.errors.email && <p className="text-xs text-destructive">{form.formState.errors.email.message}</p>}
                 </div>
                 <div className="space-y-2">
+                  <label className="text-sm font-medium text-foreground">Phone Number</label>
+                  <input 
+                    {...form.register("phone")}
+                    type="tel" 
+                    data-testid="input-phone"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+                    placeholder="(555) 123-4567"
+                  />
+                  {form.formState.errors.phone && <p className="text-xs text-destructive">{form.formState.errors.phone.message}</p>}
+                </div>
+                <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">How can we help?</label>
                   <textarea 
                     {...form.register("message")}
