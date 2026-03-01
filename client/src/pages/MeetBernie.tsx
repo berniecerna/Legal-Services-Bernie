@@ -44,11 +44,6 @@ export default function MeetBernie() {
 
                 Contact me today, and let’s chart a clear path forward — together.</p>
               </div>
-
-              <div>
-                <h4 className="text-xl font-bold text-foreground mb-4">Community Involvement</h4>
-                <p>[Write about your ties to the Monterey County community. Include any volunteer work, community organizations, pro bono efforts, or local involvement that reflects your commitment beyond the courtroom.]</p>
-              </div>
             </div>
           </div>
         </div>
