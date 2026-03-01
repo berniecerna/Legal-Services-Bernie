@@ -1,5 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
-import justiceAbstract from "@/assets/justice-abstract.png";
+import logoImage from "@assets/Logo_-_Silver_with_white_background_1772057157870.png";
 
 export default function MeetBernie() {
   return (
@@ -8,33 +8,60 @@ export default function MeetBernie() {
 
       <section className="pt-32 pb-24 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/5 rounded-3xl transform -translate-x-4 translate-y-4 -z-10" />
-              <img 
-                src={justiceAbstract} 
-                alt="Abstract Justice" 
-                className="w-full h-auto rounded-3xl shadow-xl shadow-black/5"
-              />
-            </div>
-            <div>
-              <h2 className="text-sm font-bold text-primary uppercase tracking-widest mb-3">Our Philosophy</h2>
-              <h3 className="text-3xl md:text-5xl font-bold mb-6 text-foreground leading-tight">
-                Holistic Representation
-              </h3>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-sm font-bold text-primary uppercase tracking-widest mb-3 text-center">About</h2>
+            <h3 className="text-3xl md:text-5xl font-bold mb-12 text-foreground text-center leading-tight">
+              Meet Bernie
+            </h3>
+
+            <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
+              <div className="bg-secondary/30 rounded-3xl p-12 flex items-center justify-center aspect-square">
+                <p className="text-muted-foreground text-center">[Insert photo of Bernie here]</p>
+              </div>
               <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
-                <p>My practice is rooted in holistic representation: the belief that a client is more than a case file. Holistic defense means understanding your story, your goals, and the circumstances that led you into your situation. Then, using that bigger picture to shape both strategy and outcome. By seeing the whole person, I can fight not just for a legal win, but for solutions that protect your future.</p>
+                <p>[Write a brief introduction about Bernie here. Include background, where you grew up, and what drew you to the legal profession. This is the first thing visitors will read, so make it personal and welcoming.]</p>
+                <p>[Write about your education, bar admissions, and professional qualifications here. Include law school, any honors or distinctions, and years of experience practicing law.]</p>
+              </div>
+            </div>
 
-                <p className="font-bold text-foreground">Solution Based Advocacy</p>
+            <div className="space-y-8 text-lg text-muted-foreground font-light leading-relaxed">
+              <div>
+                <h4 className="text-xl font-bold text-foreground mb-4">Why I Practice Law</h4>
+                <p>[Write about your motivation for practicing law. What drives you? What experiences shaped your approach to legal representation? Why did you choose to focus on criminal defense, civil litigation, and the practice areas you serve?]</p>
+              </div>
 
-                <p>When your case goes to court, I provide aggressive, detail‑driven representation designed to protect your rights and fight for the best possible outcome. A holistic defense means I don't just argue, I bring your full story into focus. The Court needs to know who you are beyond what is written about you. By connecting facts, context, and your long‑term goals, I build stronger arguments and fight for results that make a real difference in your life.</p>
+              <div>
+                <h4 className="text-xl font-bold text-foreground mb-4">Community Involvement</h4>
+                <p>[Write about your ties to the Monterey County community. Include any volunteer work, community organizations, pro bono efforts, or local involvement that reflects your commitment beyond the courtroom.]</p>
+              </div>
 
-                <p>Winning matters, but so does knowing you're seen and heard as a whole person. From the first consultation to the final resolution, I stand beside you with strategy, persistence, and the full weight of my experience. A holistic approach means you stay informed, have a voice in the process, and know that your future, and not just your case, guides every decision we make together.</p>
+              <div>
+                <h4 className="text-xl font-bold text-foreground mb-4">Outside the Courtroom</h4>
+                <p>[Write about your personal interests and hobbies. This helps clients connect with you as a person. Include family life, hobbies, or passions that give visitors a sense of who you are beyond your legal practice.]</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <footer className="py-12 bg-white border-t border-border">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+            <div className="flex items-center gap-3">
+              <img src={logoImage} alt="" className="h-8 w-8 object-contain" />
+              <span className="font-heading font-bold text-foreground">Attorney Bernie</span>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              &copy; {new Date().getFullYear()} | Attorney Bernie: Legal Services | All rights reserved.
+            </p>
+          </div>
+          <div className="border-t border-border pt-6">
+            <p className="text-xs text-muted-foreground text-center leading-relaxed max-w-4xl mx-auto">
+              The information on this website is provided for general informational purposes only and is not legal advice. Sending a message through this site, filling out a contact form, or communicating with Attorney Bernie in any way does not create an attorney-client relationship. No attorney-client relationship is formed unless and until a written agreement is signed. Please do not send confidential or sensitive information through this site.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
