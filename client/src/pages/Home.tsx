@@ -321,8 +321,8 @@ export default function Home() {
                 <span className="font-heading font-bold text-foreground">Attorney Bernie</span>
               </div>
               <div className="text-sm text-muted-foreground font-light mt-2 space-y-0.5">
-                <p>21 W. Alisal Street #110
-                Salinas, CA 93901</p>
+                <p>21 W. Alisal Street #110</p>
+                <p>Salinas, CA 93901</p>
                 <p>(831) 609-0022</p>
                 <p>email@yourattorneybernie.com</p>
               </div>
