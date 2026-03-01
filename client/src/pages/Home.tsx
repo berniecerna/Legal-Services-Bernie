@@ -323,7 +323,7 @@ export default function Home() {
               <span className="font-heading font-bold text-foreground">Attorney Bernie</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Attorney Bernie Legal Services. All rights reserved.
+              © {new Date().getFullYear()} | Attorney Bernie: Legal Services | All rights reserved.
             </p>
             <div className="flex gap-4 text-sm text-muted-foreground">
               <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
