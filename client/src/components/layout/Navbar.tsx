@@ -10,9 +10,9 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Meet Bernie", href: "/meet-bernie" },
-    { name: "Services", href: "#services" },
-    { name: "About Our Logo", href: "#logo" },
-    { name: "Contact", href: "#contact" },
+    { name: "Services", href: "/#services" },
+    { name: "About Our Logo", href: "/#logo" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -35,7 +35,7 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) =>
-              link.href.startsWith("#") ? (
+              link.href.startsWith("/#") ? (
                 <a
                   key={link.name}
                   href={link.href}
@@ -72,7 +72,7 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-b border-border absolute w-full pb-4 shadow-xl animate-in slide-in-from-top-2">
           <nav className="flex flex-col container mx-auto px-4">
             {navLinks.map((link) =>
-              link.href.startsWith("#") ? (
+              link.href.startsWith("/#") ? (
                 <a
                   key={link.name}
                   href={link.href}
