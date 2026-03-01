@@ -87,7 +87,10 @@ export default function Navbar() {
                 </Link>
               )
             )}
-            <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 font-medium tracking-wide">
+            <Button
+              className="bg-primary hover:bg-primary/90 text-white rounded-full px-6 font-medium tracking-wide"
+              onClick={(e) => handleHashClick(e as any, "/#contact")}
+            >
               Free Consultation
             </Button>
           </nav>
@@ -135,7 +138,10 @@ export default function Navbar() {
                 </Link>
               )
             )}
-            <Button className="mt-6 bg-primary w-full rounded-full">
+            <Button
+              className="mt-6 bg-primary w-full rounded-full"
+              onClick={(e) => { handleHashClick(e as any, "/#contact"); setIsMenuOpen(false); }}
+            >
               Free Consultation
             </Button>
           </nav>
