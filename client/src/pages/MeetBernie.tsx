@@ -32,7 +32,7 @@ export default function MeetBernie() {
 
                 <p className="pt-[20px] pb-[20px]">Clients describe me as informed, caring, and patient. What excites me most about law isn’t handing down directives but walking my clients through every step, explaining my thought process, sharing the strategy, and incorporating their goals into the plan. That way, the final result always feels like a success that reflects their voice as much as mine.</p>
 
-                <p>I was raised in Salinas and built my career here in Monterey County, with cases extending into Santa Cruz, San Benito, and Santa Clara counties. These are my communities, and I draw on the relationships I’ve built across them to advocate more effectively for my clients.</p>
+                <p className="pt-[20px] pb-[20px]">I was raised in Salinas and built my career here in Monterey County, with cases extending into Santa Cruz, San Benito, and Santa Clara counties. These are my communities, and I draw on the relationships I’ve built across them to advocate more effectively for my clients.</p>
 
                 <p className="pt-[20px] pb-[20px]">Outside of work, I’m a lifelong learner and problem-solver. I’m currently on my second custom PC build and love keeping up with the latest tech. I also regularly am baking and enjoy formulating new recipes and flavor combinations. In another life, I would’ve gone to pastry school instead of law school.</p>
 
