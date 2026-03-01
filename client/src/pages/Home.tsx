@@ -1,6 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Landmark, Users, MapPin, Phone, Mail, Scale } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Mail, Scale } from "lucide-react";
 import heroBg from "@/assets/hero-bg.png";
 import justiceAbstract from "@/assets/justice-abstract.png";
 import logoImage from "@assets/Logo_-_Silver_with_white_background_1772057157870.png";
@@ -123,37 +123,6 @@ export default function Home() {
                 <p>Winning matters, but so does knowing you’re seen and heard as a whole person. From the first consultation to the final resolution, I stand beside you with strategy, persistence, and the full weight of my experience. A holistic approach means you stay informed, have a voice in the process, and know that your future, and not just your case, guides every decision we make together.</p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      {/* Services Section */}
-      <section id="services" className="py-24 bg-secondary/30">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-sm font-bold text-primary uppercase tracking-widest mb-3">What We Do</h2>
-            <h3 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
-              Complete Representation
-            </h3>
-            <p className="text-lg text-muted-foreground font-light">
-              From the first consultation to the final resolution, I stand beside you with strategy, persistence, and the full weight of my experience.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard 
-              icon={<Users className="h-8 w-8" />}
-              title="Client-Centered Focus"
-              description="You stay informed, have a voice in the process, and know that your future, and not just your case, guides every decision."
-            <ServiceCard 
-              icon={<Shield className="h-8 w-8" />}
-              title="Advocacy Beyond Court"
-              description="Not every fight has to play out in front of a judge. Many challenges can be resolved faster through negotiation or mediation."
-            />
-            <ServiceCard 
-              icon={<Landmark className="h-8 w-8" />}
-              title="Strategy & Litigation"
-              description="Aggressive, detail-driven representation designed to protect your rights and fight for the best possible outcome when you go to court."
-            />
           </div>
         </div>
       </section>
@@ -319,16 +288,3 @@ export default function Home() {
   );
 }
 
-function ServiceCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
-  return (
-    <div className="bg-white p-8 rounded-3xl shadow-sm border border-border/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-      <div className="bg-primary/5 text-primary w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:bg-primary group-hover:text-white">
-        {icon}
-      </div>
-      <h4 className="text-xl font-bold mb-4 text-foreground">{title}</h4>
-      <p className="text-muted-foreground font-light leading-relaxed">
-        {description}
-      </p>
-    </div>
-  );
-}
