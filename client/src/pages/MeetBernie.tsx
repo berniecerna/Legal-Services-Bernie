@@ -19,7 +19,7 @@ export default function MeetBernie() {
               </div>
               <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
                 <p>I became a lawyer because I like making complicated things simple. Growing up, I translated English to Spanish for my mom, and that’s when I realized people need help navigating systems that weren’t built for them. I liked helping then, and I like helping now. Today, I translate the legal system for clients facing some of the most stressful moments of their lives. My goal is always the same: to give people clarity and the confidence to make informed decisions. </p>
-                <p>[Write about your education, bar admissions, and professional qualifications here. Include law school, any honors or distinctions, and years of experience practicing law.]</p>
+                <p>I received my Juris Doctorate from Monterey College of Law in 2021. I have been practicing locally since then. The first ten years of my legal career was with a local criminal defense firm, the first seven years as a Paralegal and then three as an attorney. After 10 years, I branched out and began a solo practice widening my scope of services beyond criminal defense. </p>
               </div>
             </div>
 
