@@ -202,7 +202,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-medium">Monterey County</p>
-                    <p className="text-sm text-primary-foreground/70">And San Benito, Santa Cruz, & Santa Clara Counties.</p>
+                    <p className="text-sm text-primary-foreground/70">Also serving San Benito, Santa Cruz, & Santa Clara Counties.</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
