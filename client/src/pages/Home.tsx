@@ -120,8 +120,6 @@ export default function Home() {
 
                 <p>When your case goes to court, I provide aggressive, detail‑driven representation designed to protect your rights and fight for the best possible outcome. A holistic defense means I don’t just argue the charges, I bring your full story into focus. The Court needs to know who you are beyond what is written about you in the complaining papers. By connecting facts, context, and your long‑term goals, I build stronger arguments and fight for results that make a real difference in your life.</p>
 
-                <p className="font-bold text-foreground">Complete Representation</p>
-
                 <p>Winning matters, but so does knowing you’re seen and heard as a whole person. From the first consultation to the final resolution, I stand beside you with strategy, persistence, and the full weight of my experience. A holistic approach means you stay informed, have a voice in the process, and know that your future, and not just your case, guides every decision we make together.</p>
               </div>
             </div>
