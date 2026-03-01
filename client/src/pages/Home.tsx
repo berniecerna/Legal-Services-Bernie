@@ -287,7 +287,7 @@ export default function Home() {
       {/* Logo Section */}
       <section id="logo" className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-sm font-bold text-primary uppercase tracking-widest mb-3 text-center">Brand Identity</h2>
             <h3 className="text-3xl md:text-5xl font-bold mb-12 text-foreground text-center">
               Our Logo
