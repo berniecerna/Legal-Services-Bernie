@@ -314,9 +314,16 @@ export default function Home() {
       <footer className="py-12 bg-white border-t border-border">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
-            <div className="flex items-center gap-3">
-              <img src={logoImage} alt="" className="h-8 w-8 object-contain" />
-              <span className="font-heading font-bold text-foreground">Attorney Bernie</span>
+            <div>
+              <div className="flex items-center gap-3">
+                <img src={logoImage} alt="" className="h-8 w-8 object-contain" />
+                <span className="font-heading font-bold text-foreground">Attorney Bernie</span>
+              </div>
+              <div className="text-sm text-muted-foreground font-light mt-2 space-y-0.5">
+                <p>Monterey County, CA</p>
+                <p>(831) 609-0022</p>
+                <p>email@yourattorneybernie.com</p>
+              </div>
             </div>
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} | Attorney Bernie: Legal Services | All rights reserved.
