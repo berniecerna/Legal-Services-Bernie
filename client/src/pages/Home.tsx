@@ -211,7 +211,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-medium">(831) 609-0022</p>
-                    <p className="text-sm text-primary-foreground/70">Available 24/7</p>
+                    <p className="text-sm text-primary-foreground/70">Call or Text | Available 24/7</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
